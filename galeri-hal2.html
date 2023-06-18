@@ -202,13 +202,13 @@
             <li class="nav-item">
               <a class="nav-link" href="prestasi.html">Prestasi</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeri.html">Galeri</a>
-            </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >Kontak<span class="sr-only">(current)</span></a
+                >Galeri <span class="sr-only">(current)</span></a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
             </li>
           </ul>
         </div>
@@ -224,74 +224,83 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+              <li class="breadcrumb-item active" aria-current="page">Galeri</li>
             </ol>
           </nav>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" style="margin: 4rem 0 6rem">
+    <!-- Isi -->
+    <section id="berita" style="margin: 2rem 0 6rem; padding: 0">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-start">
           <div class="col">
-            <h1 class="text-judul">Kontak</h1>
+            <h1 class="text-judul mb-2" style="text-transform: none">Galeri</h1>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form name="school-contact-form" action="kontak.php" method="post">
-              <div class="mb-3">
-                <label for="form-name" class="form-label">Nama Lengkap</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="form-name"
-                  aria-describedby="form-name"
-                  name="nama"
-                  size="30"
-                />
+        <div class="section-body">
+          <div class="row">
+            <!-- 1 -->
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <a href="#"><img src="assets/img/galeri-7.jpg" alt="" /></a>
+                <div class="tanggal">
+                  <span class="tgl">18</span>
+                  <span class="bln">November, 2022</span>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="form-email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="form-email"
-                  aria-describedby="form-email"
-                  name="email"
-                  size="30"
-                />
+              <div class="section-content">
+                <a href="#"
+                  ><h3>Latihan Dasar Kepemimpinan Organisasi (LDKO)</h3></a
+                >
               </div>
-              <div class="mb-3">
-                <label for="form-telfon" class="form-label">No. Telp</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="form-telfon"
-                  aria-describedby="form-email"
-                  name="telfon"
-                  size="13"
-                />
+            </div>
+            <!-- 2 -->
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <a href="#"><img src="assets/img/galeri-8.jpg" alt="" /></a>
+                <div class="tanggal">
+                  <span class="tgl">10</span>
+                  <span class="bln">November, 2023</span>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="form-pesan" class="form-label">Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="form-pesan"
-                  rows="5"
-                  name="pesan"
-                ></textarea>
+              <div class="section-content">
+                <a href="#"
+                  ><h3>
+                    Paskibra SMKN 19 menjadi petugas pengibar di Kecamatan Tanah
+                    Abang
+                  </h3></a
+                >
               </div>
-              <input type="submit" value="Kirim" class="btn btn-utama" />
-              <input type="reset" value="Hapus" class="btn btn-utama" />
-            </form>
+            </div>
           </div>
+          <!-- .row -->
         </div>
+        <nav aria-label="button-halaman">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="galeri.html" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item" aria-current="page">
+              <a class="page-link" href="galeri.html">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
+      <!-- .container -->
     </section>
-    <!-- Akhir contact -->
+    <!-- Akhir Isi -->
 
     <!-- Scroll top -->
     <div id="progress" style="display: block">
