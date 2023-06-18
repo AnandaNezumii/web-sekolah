@@ -25,7 +25,7 @@ let calcScrollValue = () => {
 };
 
 window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+window.onclick = calcScrollValue;
 
 // carousel
 $(document).ready(function () {
