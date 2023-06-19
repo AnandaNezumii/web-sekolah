@@ -1,31 +1,10 @@
 // alert
 function message() {
-  var name = window.prompt("Halo Teman, Silahkan Input Nama Anda");
-  alert("Halo " + name + ", Selamat Datang di Website SMK Negeri 19 Jakarta");
+  var nameAlert = window.prompt("Halo Teman, Silahkan Input Nama Anda");
+  alert(
+    "Halo " + nameAlert + ", Selamat Datang di Website SMK Negeri 19 Jakarta"
+  );
 }
-
-//Scroll to TOP
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 600) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#05386b ${scrollValue}%, #ddd ${scrollValue}%)`;
-};
-
-window.onscroll = calcScrollValue;
-window.onclick = calcScrollValue;
 
 // carousel
 $(document).ready(function () {
@@ -95,6 +74,30 @@ $(document).ready(function () {
     },
   });
 });
+
+//Scroll to TOP
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 600) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#05386b ${scrollValue}%, #ddd ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onclick = calcScrollValue;
+//window.onload = calcScrollValue;
 
 // Kalender
 function displayCalendar(month, year) {
